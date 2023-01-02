@@ -1,4 +1,18 @@
 
 * { 
-    box-sizing: n;
+    box-sizing: border-box;
+}
+
+.member_interface {
+    width: 77%;
+    display: block;
+    margin: auto auto 100px;;
+    text-align: center;
+}
+
+.user_interface { 
+    width: 77%;
+    display: block;
+    margin: auto;
+    text-align: center;
 }

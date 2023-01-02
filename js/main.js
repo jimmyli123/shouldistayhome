@@ -8,7 +8,13 @@ let threeFourth = oneFourth * 3;
 
 
 function addOne() {
-    if (count+1 > maxCapacity) {
+    if (count+1 === maxCapacity) {
+        document.querySelector("#showCount").innerHTML = "You have reached max capacity.";
+        count +=1;
+        let progressBar = document.querySelector("#progress_bar")
+        checkCounter(count)
+    } 
+    else if (count+1 > maxCapacity) {
         document.querySelector("#showCount").innerHTML = "You have reached max capacity.";
     } 
     else {
@@ -17,7 +23,6 @@ function addOne() {
         let progressBar = document.querySelector("#progress_bar")
         checkCounter(count)
     }
-
 }
 
 function removeOne() {
